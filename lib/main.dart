@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:wpp_messenger/common/theme/dark.dart';
+import 'package:wpp_messenger/common/theme/light.dart';
 import 'package:wpp_messenger/features/welcome/pages/welcome_page.dart';
 
 void main() {
@@ -13,7 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'WhatsApp Clone',
-      theme: ThemeData.dark(),
+      theme: lightTheme(),
+      darkTheme: darkTheme(),
+      themeMode: ThemeMode.system,
       home: WelcomePage(),
     );
   }
