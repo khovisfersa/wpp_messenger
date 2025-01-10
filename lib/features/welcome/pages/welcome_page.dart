@@ -14,13 +14,18 @@ class WelcomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Expanded(child: Text("ririririri")),
+            Expanded(
+                child: Center(
+                    child: Text("ririririri",
+                        style: TextStyle(
+                          color: Coloors.backgroundlight,
+                        )))),
             Expanded(
                 child: Column(
               children: [
                 Text(
                   "Welcome to WhatsApp",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22, color: Coloors.backgroundlight),
                 ),
                 Padding(
                   padding:
@@ -43,7 +48,8 @@ class WelcomePage extends StatelessWidget {
                           ])),
                 ),
                 // const PrivacyAndTerms(),
-                Customelevatedbutton(buttonText: "AGREE AND ACCEPT", onPressed: (){}),
+                Customelevatedbutton(
+                    buttonText: "AGREE AND ACCEPT", onPressed: () {}),
                 const SizedBox(
                   height: 50,
                 ),

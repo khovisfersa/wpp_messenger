@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'coloors.dart';
+// import 'coloors.dart';
 
 class Customelevatedbutton extends StatelessWidget {
   final double? buttonWidth;
@@ -18,7 +18,7 @@ class Customelevatedbutton extends StatelessWidget {
     return SizedBox(
       height: 42,
       width: buttonWidth ?? MediaQuery.of(context).size.width - 100,
-      child: ElevatedButton(onPressed: onPressed, child: Text(buttonText)),
+      child: ElevatedButton(onPressed: onPressed, child: Text(buttonText), ),
     );
   }
 }
